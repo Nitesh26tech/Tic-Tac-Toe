@@ -1,0 +1,124 @@
+
+/* App.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+  color: white;
+}
+.box-container {
+  text-align: center;
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); 
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+h4 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+button {
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: #ff4500;
+  transform: translateY(-3px);
+}
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+.box-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  background-color: #ffeb3b;
+  border: 3px solid #ffd700;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, transform 0.1s ease, color 0.3s ease;
+}
+.square:hover {
+  background-color: #ffb300;
+  transform: scale(1.1);
+  color: #fff;
+}
+.square:active {
+  transform: scale(1);
+  background-color: #ff9800;
+  color: white;
+}
+b {
+  font-size: 26px;
+  color: #76d7c4;
+  margin-bottom: 15px;
+  font-weight: bold;
+  animation: colorAnimation 2s infinite alternate; 
+}
+.game-over-message {
+  color: #f44336;
+  font-size: 22px;
+  font-weight: bold;
+}
+.reset-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+/* winner text color */
+@keyframes colorAnimation {
+  0% {
+    color: #76d7c4;
+  }
+  100% {
+    color: #ff6347;
+  }
+}
+
+/*  active squares */
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 87, 34, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.6);
+  }
+}
