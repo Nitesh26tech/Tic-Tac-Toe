@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-Tic-tac-toe Game  
+Create a simple Tic-tac-toe game using react js
